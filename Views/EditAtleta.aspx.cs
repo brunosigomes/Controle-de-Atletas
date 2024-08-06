@@ -22,7 +22,7 @@ public partial class EditAtleta : System.Web.UI.Page
             }
             else
             {
-                Response.Redirect("Views/Default.aspx"); // Redirecionar para a página de listagem se o ID não for válido
+                Response.Redirect("Default.aspx"); // Redirecionar para a página de listagem se o ID não for válido
             }
         }
     }
@@ -43,7 +43,7 @@ public partial class EditAtleta : System.Web.UI.Page
         }
         else
         {
-            Response.Redirect("Views/Default.aspx"); // Redirecionar se o atleta não for encontrado
+            Response.Redirect("Default.aspx"); // Redirecionar se o atleta não for encontrado
         }
     }
 
@@ -62,6 +62,6 @@ public partial class EditAtleta : System.Web.UI.Page
         };
 
         _atletasRepository.UpdateAtleta(atleta);
-        Response.Redirect("Views/Default.aspx"); // Redirecionar para a página de listagem após salvar
+        Response.Redirect("Default.aspx"); // Redirecionar para a página de listagem após salvar
     }
 }
