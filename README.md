@@ -1,30 +1,28 @@
 # Controle de Atletas
 
-README - Controle de Atletas
-
-DescriÁ„o do Projeto
-- O Controle de Atletas È uma aplicaÁ„o web desenvolvida em ASP.NET WebForms, com o objetivo de gerenciar informaÁıes de atletas. O sistema permite a visualizaÁ„o, ediÁ„o, exclus„o e cadastro de atletas, mantendo um registro detalhado de suas informaÁıes, como nome completo, apelido, data de nascimento, altura, peso, posiÁ„o e n˙mero da camisa.
+Descri√ß√£o do Projeto
+- O Controle de Atletas √© uma aplica√ß√£o web desenvolvida em ASP.NET WebForms, com o objetivo de gerenciar informa√ß√µes de atletas. O sistema permite a visualiza√ß√£o, edi√ß√£o, exclus√£o e cadastro de atletas, mantendo um registro detalhado de suas informa√ß√µes, como nome completo, apelido, data de nascimento, altura, peso, posi√ß√£o e n√∫mero da camisa.
 
 Funcionalidades Principais:
-- Listagem de Atletas: VisualizaÁ„o de todos os atletas cadastrados em um GridView.
-- EdiÁ„o de Atletas: Permite editar os dados de um atleta existente atravÈs de um formul·rio de ediÁ„o.
-- Exclus„o de Atletas: Funcionalidade para remover atletas do banco de dados.
+- Listagem de Atletas: Visualiza√ß√£o de todos os atletas cadastrados em um GridView.
+- Edi√ß√£o de Atletas: Permite editar os dados de um atleta existente atrav√©s de um formul√°rio de edi√ß√£o.
+- Exclus√£o de Atletas: Funcionalidade para remover atletas do banco de dados.
 - Cadastro de Novos Atletas: Interface para adicionar novos atletas ao sistema.
-- ClassificaÁ„o IMC: C·lculo e exibiÁ„o do Õndice de Massa Corporal (IMC) com base nos dados fornecidos.
+- Classifica√ß√£o IMC: C√°lculo e exibi√ß√£o do √çndice de Massa Corporal (IMC) com base nos dados fornecidos.
 
 Requisitos de Sistema:
 - .NET Framework 4.x
 - Visual Studio 2019 ou superior
-- SQL Server ou outro banco de dados compatÌvel
-- ConfiguraÁ„o do Banco de Dados
+- SQL Server ou outro banco de dados compat√≠vel
+- Configura√ß√£o do Banco de Dados
 
-1. CriaÁ„o do Banco de Dados:
-Primeiro, vocÍ precisa criar o banco de dados chamado banco_atletas. Isso pode ser feito utilizando o SQL Server Management Studio ou outro cliente de SQL. Utilize o seguinte comando SQL para criar o banco de dados:
+1. Cria√ß√£o do Banco de Dados:
+Primeiro, voc√™ precisa criar o banco de dados chamado banco_atletas. Isso pode ser feito utilizando o SQL Server Management Studio ou outro cliente de SQL. Utilize o seguinte comando SQL para criar o banco de dados:
 
 CREATE DATABASE banco_atletas;
 
-2. ConfiguraÁ„o da Tabela de Atletas
-Depois de criar o banco de dados, crie uma tabela para armazenar as informaÁıes dos atletas. Um exemplo b·sico de como a tabela poderia ser estruturada:
+2. Configura√ß√£o da Tabela de Atletas
+Depois de criar o banco de dados, crie uma tabela para armazenar as informa√ß√µes dos atletas. Um exemplo b√°sico de como a tabela poderia ser estruturada:
 
 CREATE TABLE Atletas (
     Id INT PRIMARY KEY IDENTITY,
@@ -37,8 +35,8 @@ CREATE TABLE Atletas (
     NumeroCamisa INT
 );
 
-3. ConfiguraÁ„o do Web.config
-No arquivo Web.config, configure a string de conex„o para que a aplicaÁ„o possa se comunicar com o banco de dados banco_atletas. Adicione ou modifique a seguinte entrada na seÁ„o <connectionStrings>:
+3. Configura√ß√£o do Web.config
+No arquivo Web.config, configure a string de conex√£o para que a aplica√ß√£o possa se comunicar com o banco de dados banco_atletas. Adicione ou modifique a seguinte entrada na se√ß√£o <connectionStrings>:
 
 <connectionStrings>
 	<add name="MySqlConnection"
@@ -46,17 +44,17 @@ No arquivo Web.config, configure a string de conex„o para que a aplicaÁ„o possa 
 			providerName="MySql.Data.MySqlClient" />
 </connectionStrings>
 
-Certifique-se de substituir SEU_SERVIDOR pelo nome ou endereÁo do seu servidor SQL.
+Certifique-se de substituir SEU_SERVIDOR pelo nome ou endere√ßo do seu servidor SQL.
 
-4. IntegraÁ„o com a AplicaÁ„o
-A aplicaÁ„o utilizar· a string de conex„o configurada no Web.config para se comunicar com o banco de dados banco_atletas. Certifique-se de que as operaÁıes de CRUD (Create, Read, Update, Delete) nos arquivos de cÛdigo estejam utilizando essa conex„o para interagir com a tabela Atletas.
+4. Integra√ß√£o com a Aplica√ß√£o
+A aplica√ß√£o utilizar√° a string de conex√£o configurada no Web.config para se comunicar com o banco de dados banco_atletas. Certifique-se de que as opera√ß√µes de CRUD (Create, Read, Update, Delete) nos arquivos de c√≥digo estejam utilizando essa conex√£o para interagir com a tabela Atletas.
 
 Como Executar o Projeto:
-- Clone o repositÛrio para sua m·quina local.
+- Clone o reposit√≥rio para sua m√°quina local.
 - Abra o projeto no Visual Studio.
-- Verifique se a string de conex„o est· corretamente configurada no arquivo Web.config.
+- Verifique se a string de conex√£o est√° corretamente configurada no arquivo Web.config.
 - Compile e execute o projeto.
-- Acesse a aplicaÁ„o atravÈs do navegador para visualizar e gerenciar os atletas cadastrados.
+- Acesse a aplica√ß√£o atrav√©s do navegador para visualizar e gerenciar os atletas cadastrados.
 
-ConsideraÁıes Finais
-Esse projeto serve como uma base para o gerenciamento de informaÁıes de atletas, podendo ser estendido com novas funcionalidades conforme a necessidade. Sinta-se ‡ vontade para contribuir ou modificar o cÛdigo conforme necess·rio.
+Considera√ß√µes Finais
+Esse projeto serve como uma base para o gerenciamento de informa√ß√µes de atletas, podendo ser estendido com novas funcionalidades conforme a necessidade. Sinta-se √† vontade para contribuir ou modificar o c√≥digo conforme necess√°rio.
