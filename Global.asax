@@ -9,6 +9,7 @@
     {
         RouteConfig.RegisterRoutes(RouteTable.Routes);
         BundleConfig.RegisterBundles(BundleTable.Bundles);
+        RouteTable.Routes.MapPageRoute("HomeRoute", "", "~/Views/Default.aspx");
     }
 
 </script>
