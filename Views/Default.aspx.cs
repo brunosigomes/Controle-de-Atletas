@@ -65,7 +65,7 @@ public partial class Default : Page
 
     protected void btnAddAtleta_Click(object sender, EventArgs e)
     {
-        Response.Redirect("Views/AddAtleta.aspx");
+        Response.Redirect("AddAtleta.aspx");
     }
 
     protected void gvAtletas_RowCommand(object sender, GridViewCommandEventArgs e)
@@ -74,7 +74,7 @@ public partial class Default : Page
         {
             int index = Convert.ToInt32(e.CommandArgument);
             int atletaId = Convert.ToInt32(gvAtletas.DataKeys[index].Value);
-            Response.Redirect(string.Format("Views/EditAtleta.aspx?id={0}", atletaId));
+            Response.Redirect(string.Format("EditAtleta.aspx?id={0}", atletaId));
         }
     }
 
