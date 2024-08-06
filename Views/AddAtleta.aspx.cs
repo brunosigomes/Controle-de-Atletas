@@ -39,7 +39,7 @@ public partial class AddAtleta : System.Web.UI.Page
             if (result > 0)
             {
                 // Atleta adicionado com sucesso
-                Response.Redirect("Default.aspx"); // Redireciona para uma página de sucesso ou exibe uma mensagem
+                Response.Redirect("Views/Default.aspx"); // Redireciona para uma página de sucesso ou exibe uma mensagem
             }
             else
             {
