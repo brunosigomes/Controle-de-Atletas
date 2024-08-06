@@ -8,8 +8,7 @@
     void Application_Start(object sender, EventArgs e)
     {
         RouteConfig.RegisterRoutes(RouteTable.Routes);
-        BundleConfig.RegisterBundles(BundleTable.Bundles);
-        RouteTable.Routes.MapPageRoute("HomeRoute", "", "~/Views/Default.aspx");
+        BundleConfig.RegisterBundles(BundleTable.Bundles);        
     }
 
 </script>
